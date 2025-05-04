@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: together-api
+  r2dbc:
+    url: r2dbc:mariadb://localhost:3306/together
+    username: root
+    password: 12345
+logging:
+  level:
+    org.springframework: INFO
+    dev.gunho: DEBUG
+
+
+
+thirdparty:
+  naver:
+    url :
+      base: https://openapi.naver.com
+      blog: /v1/search/blog.json
+      local: /v1/search/local.json
+    client: xzZ_mDwV7l7Xcpz71ZG0
+    secret: PxpfYWKsGH
