@@ -1,0 +1,22 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+  {
+    "userId": "dsds601",
+    "password": "!asd465656",
+    "nickname": "강건호",
+    "email": "dsds60321@ghkang.com",
+    "csrf": "example-csrf-token"
+  }
+
+### login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+  {
+    "userId": "dsds601",
+    "password": "!asd465656"
+  }
+
+### user
+GET http://localhost:8080/users?userId=dsds601
